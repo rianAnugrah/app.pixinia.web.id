@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///D:/repo/app.pixinia.web.id/components/page-transition.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport { motion } from \"framer-motion\";\r\nimport { usePathname } from \"next/navigation\";\r\nimport { ReactNode } from \"react\";\r\n\r\ninterface PageTransitionProps {\r\n  children: ReactNode;\r\n}\r\n\r\nexport default function PageTransition({ children }: PageTransitionProps) {\r\n  return (\r\n    <motion.div\r\n      key={usePathname()}\r\n      initial={{ opacity: 0 , scale:0.5 }}\r\n      animate={{ opacity: 1 , scale:1 }}\r\n      transition={{ duration: 0.3, ease: \"easeOut\" }}\r\n      className=\"w-full\"\r\n    >\r\n      {children}\r\n    </motion.div>\r\n  );\r\n}"],"names":[],"mappings":";;;;AAEA;AACA;;;AAHA;;;AAUe,SAAS,eAAe,EAAE,QAAQ,EAAuB;;IACtE,qBACE,4TAAC,mSAAA,CAAA,SAAM,CAAC,GAAG;QAET,SAAS;YAAE,SAAS;YAAI,OAAM;QAAI;QAClC,SAAS;YAAE,SAAS;YAAI,OAAM;QAAE;QAChC,YAAY;YAAE,UAAU;YAAK,MAAM;QAAU;QAC7C,WAAU;kBAET;OANI,CAAA,GAAA,oQAAA,CAAA,cAAW,AAAD;;;;;AASrB;GAZwB;;QAGb,oQAAA,CAAA,cAAW;;;KAHE","debugId":null}}]
+}
