@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex flex-col w-full min-h-screen bg-gray-900">
-          <Navbar />
+          {/* <Navbar /> */}
           <div className="w-full min-h-[calc(100dvh_-_8rem)] overflow-y-auto">
             <PageTransition>
               {children}
